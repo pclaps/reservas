@@ -1,0 +1,24 @@
+Proyecto Pablo Claps
+Realidad pensada
+
+Sistema de reservas donde haya clientes y proveedores que brindan actividades.
+donde los clientes hacen reservas para determinadas actividades de un proveedor las cuales tienen un cupo acotado.
+
+Por ejemplo reservas de cupo para un gimnasio el cual tiene un cupo de 20 personas por hora. Entonces el cliente se agenda para una fecha y hora determinada siempre que haya cupo.
+
+La idea es permitir distintos proveedores con distintas actividades de manera de hacerlo reutilizable.
+
+Actividades
+
+Para los clientes
+-Agendarse a una actividad de un proveedor
+-Consultar actividades agendadas
+-Cancelar actividad.
+-Modificar actividad agendada.
+
+Para los proveedores
+-Crear actividad con su cupo y en que fechas está disponible.
+-Modificar Actividad
+-Suspender Actividad (envio de mails a usuarios agendados)
+
+ 
