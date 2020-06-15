@@ -1,0 +1,15 @@
+<!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <h1>Listado de tareas</h1>
+        <ul>
+            <% tasks.forEach((task) => { %>
+                <%- include('task', { task: task }) %> 
+            <% }); %>
+          </ul>
+    </body>
+</html>

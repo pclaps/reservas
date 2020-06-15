@@ -1,0 +1,26 @@
+<!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <h1>Creación de tarea</h1>
+        <form action="/tasks/create" method="POST" enctype="multipart/form-data">
+            <div>
+                <input name="name" placeholder="Nombre" type="text" required>
+            </div>
+            <div>
+                <textarea name="description" placeholder="Descripción" type="text" required></textarea>
+            </div>
+
+            <div>
+                <input type="file" name="task_image" />
+            </div>
+        
+            <div>
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </body>
+</html>

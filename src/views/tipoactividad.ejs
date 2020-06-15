@@ -1,0 +1,53 @@
+<%- include ('partials/_header'); %>
+
+<div class="flex-container">
+    <div>99999999999999991</div>
+    <div>992</div>
+    <div>3</div>  
+  </div>
+<div class="flex-container">
+    <div class="row mt-5">
+        <div class="flex-container">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>idTipoActividad</th>
+                        <th>Descripcion</th>                    
+                    </tr>
+                    <% if (data){  %> 
+                        <% for(var i=0; i<data.length;i++) { %> 
+                            <tr>
+                                <td> <%= i+1 %> </td>
+                                <td> <%= data[i].idTipoActividad %> </td>
+                                <td> <%= data[i].descripcion%> </td>                                                            
+                                
+                            </tr>
+                        <% } %> 
+                    <% } %> 
+                </thead>
+            </table>
+        </div>
+        
+        
+        <div class="card">
+            <div class="card-body">
+                <form action="/tipoactividad/add" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="idTipoActividad" placeholder="Tipo" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="descripcion" placeholder="Descripcion" class="form-control">
+                    </div>                
+                    <button type="submit" class="btn btn-primary">
+                        Guardar TipoActividad
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        </div>
+    </div>
+
+</div>
+
+<%- include ('partials/_footer'); %>
